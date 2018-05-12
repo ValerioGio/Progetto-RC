@@ -37,4 +37,4 @@ Il server partirà da [localhost:3000](http://localhost:3000/).
 
 - [NodeJs](https://nodejs.org/it/)
 
-- [OAuth 2.0](https://oauth.net/2/)
+- [OAuth 2.0](https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2)
