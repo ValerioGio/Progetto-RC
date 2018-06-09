@@ -19,11 +19,11 @@ I requisiti per la corretta consegna del progetto sono:
 ## Preparazione
  - Per installare le dipendenze eseguire _npm install nome_. 
   
- - RabbitMQ e CouchDB devono essere in esecuzione su localhost.
+ - Necessari RabbitMQ e un database su CouchDB.
 
 ## Descrizione
 Il progetto è formato da due parti, **send.js** e **attach.js**:
-attraverso OAuth, la prima ci autentifica su Google Drive dove leggerà la lista dei file dell'account e la invierà a **attach.js**, il quale la riceve e la salva in un file formato JSON.
+attraverso OAuth, la prima autorizza l'ingresso a Google Drive, dove leggerà la lista dei file dell'account e la invierà a **attach.js**, il quale la riceve e la salva in un file formato JSON.
 Lo scambio di messaggi è affidato a RabbitMQ.
 In seguito verrà richiesto l'upload di un file JSON tramite metodo POST su [localhost:8080](http://localhost:8080/), il quale sarà attaccato ad un database già esistente di couch-db.
 Il server partirà da [localhost:3000](http://localhost:3000/).
